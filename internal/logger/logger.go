@@ -15,7 +15,9 @@ func Init() {
 		os.Exit(1)
 	}
 
-	handler := slog.NewTextHandler(file, nil)
+	handler := slog.NewTextHandler(file, &slog.HandlerOptions{
+		Level: slog.LevelDebug,
+	})
 	Log = slog.New(handler)
 	slog.SetDefault(Log)
 }
