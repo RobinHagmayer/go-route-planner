@@ -24,3 +24,6 @@ go.work.sum
 
 # env file
 .env
+
+# OSM PBF files
+*.osm.pbf
