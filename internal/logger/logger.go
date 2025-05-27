@@ -11,7 +11,7 @@ var Log *slog.Logger
 func Init() {
 	file, err := os.OpenFile("go-route-planner.log", os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0o644)
 	if err != nil {
-		fmt.Println("Error while opening the log file: %w", err)
+		fmt.Println("Error while opening the log file: %v", err)
 		os.Exit(1)
 	}
 
