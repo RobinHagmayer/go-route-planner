@@ -9,6 +9,7 @@ import (
 
 func main() {
 	logger.Init()
+	defer logger.Close()
 	slog.Info("App started")
 	fmt.Println("Hello go-route-planner")
 }
