@@ -27,3 +27,6 @@ go.work.sum
 
 # OSM PBF files
 *.osm.pbf
+
+# Logs
+*.log
